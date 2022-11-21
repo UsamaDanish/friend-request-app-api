@@ -1,0 +1,18 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "generateOptions": {
+    "spec": false
+  },
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "@nestjs/swagger",
+        "options": {
+          "dtoFileNameSuffix": [".req.ts", ".res.ts", ".model.ts"],
+          "introspectComments": true
+        }
+      }
+    ]
+  }
+}
